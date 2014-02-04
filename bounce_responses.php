@@ -4,7 +4,9 @@
 #
 #
 
+
 # text in messages from which to figure out what kind of bounce
+
 $bouncelist = array(
     '[45]\d\d[- ]#?([45]\.\d\.\d{1,2})'                              => 'x',         # use the code from the regex
     'Diagnostic[- ][Cc]ode: smtp; ?\d\d\ ([45]\.\d\.\d{1,2})'        => 'x',         # use the code from the regex
