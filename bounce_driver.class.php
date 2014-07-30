@@ -504,7 +504,7 @@ class BounceHandler{
             }
             elseif (isset($line) && isset($entity) && preg_match('/^\s+(.+)\s*/', $line) && $entity) {
                 $line = trim($line);
-                if (strpos($array[2], '=?') !== FALSE)
+                if (@strpos($array[2], '=?') !== FALSE)
                     $line = iconv_mime_decode($array[2], ICONV_MIME_DECODE_CONTINUE_ON_ERROR, "UTF-8");
                 $hash[$entity] .= ' '. $line;
             }
