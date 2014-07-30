@@ -143,11 +143,11 @@ $status_code_subclasses['7.15']['title'] = "Priority Level is too low";  # [RFC6
 $status_code_subclasses['7.15']['descr'] = "The specified priority level is below the lowest priority acceptable for the receiving SMTP server. This condition might be temporary, for example the server is operating in a mode where only higher priority messages are accepted for transfer and delivery, while lower priority messages are rejected.";
 $status_code_subclasses['7.16']['title'] = "Message is too big for the specified priority";  # [RFC6710] (Standards Track)
 $status_code_subclasses['7.16']['descr'] = "The message is too big for the specified priority. This condition might be temporary, for example the server is operating in a mode where only higher priority messages below certain size are accepted for transfer and delivery.";
-$status_code_subclasses['7.17']['title'] = "Mailbox owner has changed";  # [RFC-ietf-appsawg-rrvs-header-field-10] (Standards Track)
-$status_code_subclasses['7.17']['descr'] = "This status code is returned when a message is received with a Require-Recipient-Valid-Since field or RRVS extension and the receiving system is able to determine that the intended recipient mailbox has not been under continuous ownership since the specified date.";
-$status_code_subclasses['7.18']['title'] = "Domain owner has changed";  # [RFC-ietf-appsawg-rrvs-header-field-10] (Standards Track)
-$status_code_subclasses['7.18']['descr'] = "This status code is returned when a message is received with a Require-Recipient-Valid-Since field or RRVS extension and the receiving system wishes to disclose that the owner of the domain name of the recipient has changed since the specified date.";
-$status_code_subclasses['7.19']['title'] = "RRVS test cannot be completed";  # [RFC-ietf-appsawg-rrvs-header-field-10] (Standards Track)
+$status_code_subclasses['7.17']['title'] = "Mailbox owner has changed";  # [RFC7293] (Standards Track)
+$status_code_subclasses['7.17']['descr'] = "This status code is returned when a message is received with a Require-Recipient-Valid-Since field or RRVS extension and the receiving system is able to determine that the intended recipient mailbox has not been under continuous ownership since the specified date-time.";
+$status_code_subclasses['7.18']['title'] = "Domain owner has changed";  # [RFC7293] (Standards Track)
+$status_code_subclasses['7.18']['descr'] = "This status code is returned when a message is received with a Require-Recipient-Valid-Since field or RRVS extension and the receiving system wishes to disclose that the owner of the domain name of the recipient has changed since the specified date-time.";
+$status_code_subclasses['7.19']['title'] = "RRVS test cannot be completed";  # [RFC7293] (Standards Track)
 $status_code_subclasses['7.19']['descr'] = "This status code is returned when a message is received with a Require-Recipient-Valid-Since field or RRVS extension and the receiving system cannot complete the requested evaluation because the required timestamp was not recorded. The message originator needs to decide whether to reissue the message without RRVS protection.";
 
 
